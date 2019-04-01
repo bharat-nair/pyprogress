@@ -30,5 +30,3 @@ def download_bar(url,filename):
         sys.stdout.write("Downloaded in " + str(round(time_taken,2)) + "s (" + str(download_speed) + " kB/s)" + "\n")
     if download_speed < 1:
         sys.stdout.write("Downloaded in " + str(round(time_taken,2)) + "s (" + str(download_speed*1024) + " B/s)" + "\n")
-
-download_bar("https://sample-videos.com/text/Sample-text-file-1000kb.txt","test.txt")
