@@ -6,7 +6,7 @@ def progress(downloaded, block_size, total_size):
     global download_size
     download_size = total_size
     completed = round(downloaded / (total_size//block_size) * 100)
-    sys.stdout.write("\r|" + "█" * completed + " " * (100-completed) + "|{}%".format(completed),end="")
+    sys.stdout.write("\r|" + "█" * completed + " " * (100-completed) + "|{}%".format(completed))
 
 def download_bar(url,filename):
     start = time.time()
